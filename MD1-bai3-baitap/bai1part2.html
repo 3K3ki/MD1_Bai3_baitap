@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -7,42 +7,54 @@
     h1 {
       background-color: aqua;
     }
+    form {
+      
+      background-color: darkgoldenrod;
+    }
   </style>
 </head>
 <body>
 <form>
-<h1 style="color: blue" > dang ky hoc vien</h1>
-<label>
-  ho va ten
+<h1 style="color: blue" > DANG KY HOC VIEN</h1>
+  <div>Ho va ten
+<label style="margin-left: 65px">
   <input type="text" name="yourname" >
   </label>
-  <div>Ngay sinh<input type="text" name="birh"></div>
+  </div>
+  <div>Ngay sinh
+    <label>
+    <input type="text" name="birth" style="margin-left: 62px">
+    </label>
+  </div>
   <div>Gioi tinh
-    <input type="radio" name="male"> Nam
-    <input type="radio" name="female"> Nu
-    </div>
+  <label style="margin-left: 65px">
+    <input type="radio" name="male" value=""> Nam
+    <input type="radio" name="female" value=""> Nu
+    </label>
+  </div>
   <div>Dia chi
-    <input type="text" name="address">
+    <input type="text" name="address" style="margin-left: 80px">
   </div>
   <div>Lop
-    <select name="class">
+    <label>
+    <select name="class" style="margin-left: 101px">
       <option value="pickclass">--chonlop--</option>
       <option value="JV06">JV06</option>
       <option value="JV07">JV07</option>
       <option value="JV08">JV08</option>
       <option value="JV09">JV09</option>
     </select>
+    </label>
   </div>
   <label>
     Email:
-    <input type="text"  name="email">
+    <input type="text"  name="email" style="margin-left: 84px">
   </label>
-  <lable><div>
-    Điện thoại:
-    <input type="number" name="phonenumber">
-    </div>
-  </lable>
-  <div>
+  <div><label> Điện thoại:
+    <input type="number" name="phonenumber" style="margin-left: 55px">
+  </label>
+  </div>
+  <div style="margin-left: 130px">
     <button type="submit" name="sigin">
       Đăng kí
     </button>
