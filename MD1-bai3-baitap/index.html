@@ -11,43 +11,60 @@
             text-align: center;
             margin: 0 auto;
 
+
         }
         form {
-            width: 400px;
-            height: 400px;
+            width: 500px;
+
             border: 10px solid blue;
             margin: 0 auto;
         }
-        .baka{
-            text-align: center;
-            margin-left: 55px;
-            color: chocolate;
-
-        }
+       .baka{
+           margin-left: 75px;
+       }
+       table{
+           margin-left: 125px;
+           color: orange;
+       }
+       .hoten{
+        color: blue;
+           margin-left: 65px;
+       }
+       .email{
+           color: blue;
+           margin-left: 89px;
+       }
     </style>
 </head>
 <body>
 <form>
 
     <h1 style="background-color: red" >Sơ thích của bạn</h1>
-    <label style="margin-left: 55px">Ho va ten :<input type="text" name="yourname"/></label>
+    <label class="hoten">Ho va ten :<input type="text" name="yourname"/></label>
     <div>
-        <label style="margin-left: 75px">Email :<input type="text" name="email"/></label>
+        <label class="email">Email :<input type="text" name="email"/></label>
     </div>
 
-        <label style="color: blue" class="baka" >So thich</label>
-    <label class="baka" >
-    <input type="checkbox" name="hobby"/>The Thao
-    <input type="checkbox" name="hobby"/>Am nhac
-        <br><input type="checkbox" name="hobby"/>Doc sach
-    <input type="checkbox" name="hobby"/>Luot web
-    <input type="checkbox" name="hobby"/>Choi game
-    <input type="checkbox" name="hobby"/>Dien anh
-        <input type="checkbox" name="hobby"/>Du lich
+    <label style="color: blue" class="baka" >So thich</label>
 
-    <br><button type="submit" value="Gui thong tin">Gui thong tin</button>
+    <table>
+    <tr class="b1">
+        <td></td>
+    <td><input type="checkbox" name="hobby"/>The Thao</td>
+    <td><input type="checkbox" name="hobby"/>Am nhac</td>
+        <td><input type="checkbox" name="hobby"/>Doc sach</td>
+        </tr>
+        <tr class="b2">
+            <td></td>
+    <td><input type="checkbox" name="hobby"/>Luot web</td>
+    <td><input type="checkbox" name="hobby"/>Choi game</td>
+    <td><input type="checkbox" name="hobby"/>Dien anh</td>
+        <td><input type="checkbox" name="hobby"/>Du lich</td>
+        </tr>
+    </table>
+    <br><button type="submit" value="Gui thong tin" style="margin-left: 130px">Gui thong tin</button>
     <button>Nhap lai</button>
-    </label>
+
 </form>
 </body>
 </html>
